@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache,no-store" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0"> 
+<title>老虎机抽大奖</title>
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+<script type="text/javascript" src="jquery.slotmachine.js"></script>
+<style>
+html {font-size:10px; -webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body {margin:0;padding:0;font-family:SimHei, Helvetica, sans-serif;font-size:1.4rem;color:#fff; background:url(images/trigerbg.jpg) no-repeat; background-size:100% auto}	
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, th, td {margin:0;padding:0;	border:0;font-size:1.4rem;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;	font-weight:normal; color:#000;}
+ol, ul {list-style:none;}
+fieldset, img {border:none}
+img{ display:block;}
+a{font-size:1.4rem;color:#0097aa;-webkit-user-select:none;-webkit-touch-callout:none;}
+ins,a,a:hover { text-decoration:none;}
+a:focus, *:focus {outline:none;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+
+.wrapper{ width:100%; position:relative; margin-bottom:-60px}
+.machine_main{ width:290px; margin:22% auto 10px;background:url(images/trigerbg2.png) center 0 no-repeat; background-size:265px 187px; position:relative;}
+.yaogan{ position:absolute; top:70px; right:-24px;width:36px; height:106px; background:url(images/rocker1.png) no-repeat; background-size:36px 106px;}
+.yaogan2{ position:absolute; top:141px; right:-24px;width:36px; height:106px; background:url(images/rocker2.png) no-repeat; background-size:36px 106px;}
+.machine_box{ width:228px; height:155px; padding:32px 0 0 35px; overflow:hidden}
+.slotMachine{width:72px;height: 83px;overflow: hidden; float:left;text-align: center; padding:0 1px;}
+.slotMachine img{ width:72px; height:83px; }
+.slotMachine .slot{width:72px;height:83px;}
+.tiger_btn{ width:100%; height:61.5px;background:url(images/trigerbg3.png) no-repeat; background-size:100% 61.5px;}
+.slotMachineButton{width:51px;height: 42px; float:right;margin:6px 50px 0 0; cursor:pointer;background:url(images/trigerbtn.png) no-repeat; background-size:51px 42px; overflow:hidden}
+.active{background:url(images/trigerbtnactive.png) no-repeat; background-size:51px 42px;}
+svg,filter,feGaussianBlur{ height:1px; line-height:1px; font-size:0;overflow:hidden}
+.rule_list{width:100%; position:relative;overflow:hidden}
+.rule_list p{ position:absolute; bottom:10px; left:50%; width:100%; margin-left:-50%; text-align:center; font-size:1.2rem; color:#59092f}
+/*--弹出窗口--*/
+.popUp{ position:fixed; left:0; top:0; background:rgba(0,0,0,0.5); width:100%; min-height:100%; z-index:1;display: none;}
+.window{position:absolute;left:0; top:14%;z-index:2;width:100%;}
+.popCoupon{width:76%; margin:0 auto;background:#f33648; border-radius:5px; padding-bottom:5%; position:relative;}
+.close{ display:block;position:absolute; top:-12px; right:-12px; width:25px; height:25px;background:url(images/close.png) no-repeat; background-size:25px 25px;}
+.first_center{ width:94%;height:75px; padding:21px 0 15px;background:url(images/boxbg.png) no-repeat; background-size:100% 111px; margin:0 auto; position:relative; overflow:hidden}
+.first_left{width:35%; float:left; text-align:center; color:#25adfb;min-height:75px;overflow:hidden}
+.first_left p{font-size:3.0rem;}
+.first_left p:nth-child(2){font-size:1.4rem; line-height:20px; height:20px; margin:0; overflow:hidden}
+.first_left p span{font-size:2.4rem;}
+.first_right{width:60%; margin-right:5%; float:right; min-height:75px;}
+.first_right strong{ display:block;line-height:18px; max-height:18px;color:#222; font-weight:normal; overflow:hidden}
+.first_right p{line-height:16px;color:#25adfb; font-size:1.0rem;overflow:hidden}
+.first_right span{display:block;line-height:18px; color:#666;font-size:1.2rem; padding-top:3px;word-break:break-all; overflow:hidden}
+.first_left p{ margin:0}
+.first_right p{ text-align:left}
+.first_left p.jian,.first_left p.zhe{font-size:3.0rem;}
+.first_left p.jian span,.first_left p.zhe span{font-size:1.2rem;position:relative; display:inline-block; min-width:26px; text-align:left}
+.holiday{ position:absolute; top:0; right:0;}
+.holiday img{ width:50px; height:45px;}
+.popInfo{width:100%; padding:6% 0; text-align:center; font-size:2.6rem; color:#fff; overflow:hidden}
+.popIcon1,.popIcon2{ display:inline-block; width:5px; height:6px; padding:0 2px; position:relative; top:-4px;}
+.popIcon2{top:4px;}
+.popBtn{ display:block;width:68%; height:47px; line-height:40px; background:url(images/trigerbtn2.png) no-repeat; background-size:100% 47px; text-align:center; margin:15% auto 0; color:#603d05; font-size:1.6rem;}
+.window2{ top:24%;}
+.popCoupon2{ background:#fff;}
+.close2{background:url(images/close2.png) no-repeat; background-size:25px 25px;}
+.popCoupon2 .popInfo{ color:#000; padding-bottom:6%;}
+.popCoupon2 .popInfo p{ padding-top:3px;}
+.popCoupon2 .popBtn{ margin-top:9%}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+	.wrapper{margin-bottom:0}
+	.machine_main{ width:270px;background-size:247px 171px;}
+	.machine_box{ height:141px;padding:30px 0 0 32px;}
+	.slotMachine,.slotMachine .slot,.slotMachine img{ width:67px; height:74px;}
+	.yaogan{ top:55px;}
+	.yaogan2{ top:126px}
+	.yaogan,.yaogan2{ right:-24px;}
+	.slotMachineButton{ margin:6px 45px 0 0}
+	.rule_list p{ bottom:8px;}
+	.window{top:8%}
+	.window2{ top:18%;}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait){
+	.window2{ top:23%;}
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait){
+	.window{top:20%}
+	.window2{ top:26%;}
+	.rule_list img{ height:165px;}
+	.rule_list p{ bottom:12px;}
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+	.rule_list img{ height:205px;}
+	.rule_list p{ bottom:16px;}
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="tiger_con">    	
+      <div class="machine_main">
+      	<div class="yaogan"></div>
+        <div class="machine_box">
+            <div id="machine1" class="slotMachine">
+                <div class="slot"><img src="images/trigerpic1.png" /></div>
+                <div class="slot"><img src="images/trigerpic2.png" /></div>
+                <div class="slot"><img src="images/trigerpic3.png" /></div>
+                <div class="slot"><img src="images/trigerpic4.png" /></div>
+                <div class="slot"><img src="images/trigerpic5.png" /></div>
+                <div class="slot"><img src="images/trigerpic6.png" /></div>
+                <div class="slot"><img src="images/trigerpic7.png" /></div>
+                <div class="slot"><img src="images/trigerpic8.png" /></div>
+            </div>
+            
+            <div id="machine2" class="slotMachine">
+                <div class="slot"><img src="images/trigerpic1.png" /></div>
+                <div class="slot"><img src="images/trigerpic2.png" /></div>
+                <div class="slot"><img src="images/trigerpic3.png" /></div>
+                <div class="slot"><img src="images/trigerpic4.png" /></div>
+                <div class="slot"><img src="images/trigerpic5.png" /></div>
+                <div class="slot"><img src="images/trigerpic6.png" /></div>
+                <div class="slot"><img src="images/trigerpic7.png" /></div>
+                <div class="slot"><img src="images/trigerpic8.png" /></div>
+            </div>
+            
+            <div id="machine3" class="slotMachine">
+                <div class="slot"><img src="images/trigerpic1.png" /></div>
+                <div class="slot"><img src="images/trigerpic2.png" /></div>
+                <div class="slot"><img src="images/trigerpic3.png" /></div>
+                <div class="slot"><img src="images/trigerpic4.png" /></div>
+                <div class="slot"><img src="images/trigerpic5.png" /></div>
+                <div class="slot"><img src="images/trigerpic6.png" /></div>
+                <div class="slot"><img src="images/trigerpic7.png" /></div>
+                <div class="slot"><img src="images/trigerpic8.png" /></div>
+            </div>
+        </div>
+        <div style="clear:both; display:none">
+            <div id="machine1Result" class="slotMachine noBorder" style="text-align:left">Index: 0</div>
+            <div id="machine2Result" class="slotMachine noBorder" style="text-align:left">Index: 1</div>
+            <div id="machine3Result" class="slotMachine noBorder" style="text-align:left">Index: 2</div>
+            <div class="slotMachine noBorder"></div>
+        </div>       
+        <div class="tiger_btn">        	
+            <div id="slotMachineButton1" class="slotMachineButton"></div>
+        </div>
+        <div class="rule_list">
+        	<img src="images/trigerbg4.jpg" width="100%" />
+            <p>活动时间：2016.11.08-2016.11.30</p>
+        </div>
+    </div>
+  </div>  
+</div>
+<!--中奖弹出窗口-->
+<div class="popUp" id="popUp" style="display:none">
+	<div class="window">
+        <img src="images/trigershow1.png" width="100%" />
+        <div class="popCoupon">
+        	<a href="javascript:void(0)" class="close"></a>
+        	<div class="popInfo">恭喜你，中奖啦！</div>
+        	<div class="first_center">
+            	<div class="holiday"><img src="images/boxicon2.png" /></div>
+                <table class="first_left"><tr><td><p class="jian">1<span>元</span></p><p>直减</p></td></tr></table>
+                <table class="first_right"><tr><td><strong>直减劵</strong><span>全场不限品牌1元立减券</span></td></tr></table>
+            </div>
+            <a href="#" class="popBtn">立即领取</a>
+        </div>
+    </div>
+</div>
+<!--没中奖弹出窗口-->
+<div class="popUp" id="popUp2" style="display:none">
+	<div class="window window2">
+    	<div class="popCoupon popCoupon2">
+            <a href="javascript:void(0)" class="close close2"></a>
+            <div class="popInfo">没中奖~<p>游戏么，最重要的是开心咯！</p></div>
+            <img src="images/trigershow2.jpg" width="100%" />
+            <a href="#" class="popBtn">再来一局</a>
+        </div>
+    </div>
+</div>
+<script>
+	$(document).ready(function(){
+		var machine1 = $("#machine1").slotMachine({
+			active	: 0,
+			delay	: 500
+		});
+		
+		var machine2 = $("#machine2").slotMachine({
+			active	: 1,
+			delay	: 500
+		});
+		
+		var machine3 = $("#machine3").slotMachine({
+			active	: 2,
+			delay	: 500
+		});
+		
+		function onComplete($el, active){
+			switch($el[0].id){
+				case 'machine1':
+					$("#machine1Result").text("Index: "+active.index);
+					break;
+				case 'machine2':
+					$("#machine2Result").text("Index: "+active.index);
+					break;
+				case 'machine3':
+					$("#machine3Result").text("Index: "+active.index);
+					break;
+			}
+		}
+		
+		
+		
+		$("#slotMachineButton1").click(function(){
+			
+			//document.getElementById("beep-one").play();
+			$(".yaogan").addClass("yaogan2");
+			$(this).addClass("active");	
+			setTimeout(function(){
+				$("#slotMachineButton1").removeClass("active");	
+			}, 300);
+			
+			machine1.shuffle(3, onComplete);
+			
+			setTimeout(function(){
+				machine2.shuffle(3, onComplete);
+			}, 500);
+			
+			setTimeout(function(){
+				machine3.shuffle(3, onComplete);
+			}, 1000);
+			
+			setTimeout(function(){
+				$(".yaogan").removeClass("yaogan2");
+			}, 300);
+							
+		})
+
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+html {font-size:10px; -webkit-text-size-adjust:none}
+body {margin:0;padding:0;font-family:SimHei, Helvetica, sans-serif;font-size:1.4rem;color:#202020; background:#eee;}	
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, th, td {margin:0;padding:0;	border:0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;	font-weight:normal; color:#000;}
+ol, ul {list-style:none;}
+fieldset, img {border:none}
+img{ display:block;}
+a{font-size:1.4rem;color:#0097aa;}
+ins,a,a:hover { text-decoration:none;}
+a:focus, *:focus {outline:none;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+.wrapper{ width:100%;font-size:1.4rem; overflow:hidden}
+
+/*账单详情*/
+.billInfo{background:#fff; border-bottom:1px solid #e4e4e4; margin-bottom:3%; overflow:hidden}
+.billInfo li{ margin-left:3%; padding-right:3%; height:40px; line-height:40px;border-bottom:1px solid #e4e4e4;}
+.billInfo li p{ float:left;}
+.billInfo li p:nth-child(2){ float:right; color:#808080;text-align:right}
+.billInfo li:nth-last-child(1){ border-bottom:none}
+.billInfo2{border-top:1px solid #e4e4e4;}
+.billInfo2 li{border:none; margin:0; height:32px; line-height:32px;}
+.billInfo2 li p{ padding-left:3%;width:47%}
+.billInfo2 li p:nth-child(2){width:50%; padding:0;color:#25adfe; font-size:1.5rem;}
+.billInfo2 li p:nth-child(2) span{font-family:"微软雅黑";font-size:1.4rem;}
+.billInfo2 li:nth-last-child(1){ border-top:1px solid #e4e4e4;}
+.billInfo2 li p.count{color:#e91111}
+.billList{background:#fff; border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4; margin-bottom:3%; overflow:hidden}
+.billTitle{padding:0 3%;line-height:32px;border-bottom:1px solid #e4e4e4; }
+.billTitle p{ background:url(images/icon5.png) 0 7px no-repeat; background-size:19px 16px; padding-left:25px;}
+.billPic{ padding:3%;overflow:hidden}
+.billPic li{ float:left; width:60px; height:60px;border:1px solid #eee; line-height:22px; margin-right:2%;overflow:hidden}
+.billPic li img{width:60px; height:60px;}
+.billPic li:nth-child(3){border:none; width:30px;}
+.billPic li:nth-child(3) img{ width:15px; height:4px; margin:28px auto 0;}
+.billPic li:nth-last-child(1){float:right; width:30%; height:40px;text-align:right; border:none;color:#626a6d; padding-right:14px; margin:10px 0 0;background:url(images/icon7.png) right center no-repeat; background-size:7px 12px;}
+.billPic li span{ color:#ff0000}
+.listBottom{padding:0 3%;line-height:40px;border-top:1px solid #e4e4e4; overflow:hidden}
+.listBottom p{ background:url(images/icon6.png) 0 center no-repeat; background-size:16px 11px; padding-left:24px; color:#808080}
+.billInfo li.abnormal p:nth-child(2){ float:left; width:30px; height:40px; background:url(images/icon4.png) center center no-repeat; background-size:18px 18px; margin:0 0 0 3%; cursor:pointer}
+.billInfo li.abnormal p:nth-last-child(1){ float:right; color:#ff472a}
+/*弹出层*/
+.popUp{position:fixed; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:10; left:0; top:0; display:none}
+.window{position:absolute; left:5%; top:25%; width:90%; /*height:153px;*/z-index:100;}
+.close{ display:block; float:right; width:25px;height:35px; background:url(images/close.png) right center no-repeat; background-size:25px 35px; overflow:hidden}
+.popBox{ width:94%;background:#fff; border-radius:5px; padding:5% 3%;  overflow:hidden}
+.popBox a{ display:block; width:100%; height:32px; line-height:32px; background:#25adfb; text-align:center; font-size:1.6rem; color:#fff; border-radius:2px; margin-top:5%;}
+.popInfo{padding:0 0 3px;}
+.popInfo li{ line-height:20px; background:url(images/icon9.png) 0 7px no-repeat; background-size:5px 5px; padding:0 0 0 10px; margin-top:8px; color:#5a5a5a}
+.popUp2 .window{ top:35%}
+.popUp2 .popBox p{ line-height:24px; color:#5a5a5a; text-align:center}
+
+/*支付对账单-未开通*/
+.billNoOpen{ background:#fff; padding:5% 0 8%; margin:5% 4% 0 4%;border-top-left-radius:5px;border-top-right-radius:5px; position:relative;}
+.dollar{ position:absolute; left:0; top:0; width:70px; height:76px;border-top-left-radius:5px;}
+.noOpened{ padding:13% 0 10%; background:url(images/icon14.png) 0 bottom no-repeat; background-size:100% auto; text-align:center; overflow:hidden}
+.noOpened img{ width:54px; height:41px; margin:0 auto;}
+.noOpened p{ line-height:22px; margin-top:10px; color:#808080;}
+.noOpenInfo{ padding:10% 0 0; width:248px; margin:0 auto; overflow:hidden}
+.noOpenInfo li{line-height:24px; background:url(images/icon9.png) 0 10px no-repeat; background-size:5px 5px; padding:0 0 0 10px;color:#666}
+.noOpenInfo li:nth-child(1){ background:none; color:#25adfb; font-size:1.5rem; text-align:center; padding-bottom:5px;}
+.noOpenbtn{display:block;width:90%; height:36px; line-height:36px; background:#fdb62e; text-align:center; font-size:1.6rem; color:#fff; border-radius:2px; margin:8% 5% 5%;}
+.billBottom{ margin:0 4%; width:92%; height:4px;background:url(images/icon15.png) no-repeat; background-size:100% 4px;}
+
+/*支付说明*/
+.payTitle{ line-height:20px; padding:5% 0 2%; color:#25adfb; overflow:hidden}
+.payInfo{ padding-bottom:8%; overflow:hidden}
+.payInfo p{ line-height:20px; padding:2% 0;}
+
+/*扣款说明*/
+.debitBox{ background:#fff;border-bottom:1px solid #e4e4e4; padding:0 0 5%; overflow:hidden}
+.debitMoney{ background:#25adfb;line-height:24px;padding:8% 0; text-align:center; color:#fff; font-size:2.4rem;}
+.debitMoney span,.billDate p span{font-family:"微软雅黑";}
+.debitTitle{line-height:30px; padding:0 3%; color:#25adfb;border-bottom:1px solid #e4e4e4; overflow:hidden}
+.debitInfo{ padding:3%;line-height:24px; }
+.debitTime{ padding:10% 3% 0; line-height:22px; color:#808080; font-size:1.3rem;}
+
+/*支付对账单*/
+.billTab{ position:fixed;top:0; left: 0px; z-index:10;width:100%;background:#fff;height:40px;overflow:hidden}
+.billTab li{ width:50%; float:left; height:38px; text-align:center;border-bottom:1px solid #e4e4e4; padding-bottom:1px;}
+.billTab li a{ display:block; width:100%;line-height:38px;color:#808080}
+.billTab li.active{ border-bottom:2px solid #25adfb; padding:0}
+.billTab li.active a{color:#25adfb}
+.billDate{background:#eeeeee; width:94%; line-height:30px; padding:0 3%; color:#5f646e; font-size:1.2rem; overflow:hidden}
+.billDate p{float:right; width:30%; text-align:right}
+.billDate p:nth-child(1){float:left; width:20%; text-align:left}
+.billDate p:nth-last-child(1){width:50%; text-align:center}
+.billDateList{ background:#fff;border-top:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4; padding:0 0 0 3%; overflow:hidden}
+.dateList{border-bottom:1px solid #e4e4e4; padding:2% 3% 2% 0; position:relative; overflow:hidden}
+.billDateList a:nth-last-child(1) .dateList{ border:none}
+.dateList img{ position:absolute; left:0; width:50px; height:50px;}
+.listRight{padding-left:60px; height:50px; overflow:hidden}
+.listTit{line-height:22px; overflow:hidden}
+.listTit p{float:left; width:70%; color:#202020}
+.listTit p:nth-child(2){width:30%; text-align:right}
+.listStatus{line-height:22px; margin-top:6px; overflow:hidden}
+.listStatus p{float:left; color:#808080; font-size:1.2rem; width:25%}
+.listStatus p:nth-child(2){width:45%; text-align:center}
+.listStatus p:nth-last-child(1){ float:right;width:30%; text-align:right}
+.dateAbnormal .listStatus p:nth-last-child(1){color:#ff472a}
+.dateDebit .listTit p:nth-child(1){ color:#ff472a}
+.dateDebit .listStatus p:nth-last-child(1){ float:left}
+.fix{position: fixed;top:40px; left: 0px; z-index:10}
+#fix1{position: fixed;top:40px; left: 0px; z-index:10}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache,no-store" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0"> 
+<title>免费抢券</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--活动未开始-->
+<div class="noStart" style="display:none">
+	<img src="images/nostart.png" width="100%" />
+    <p>活动还未开始哦，先去别处逛逛吧~</p>
+</div>
+<div class="wrapper">
+<div class="swiper-container gallery-thumbs swiper-container-horizontal">
+    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+    	<div class="swiper-slide"><div class="slideP"><p>8:00</p><p>已结束</p></div></div>
+        <div class="swiper-slide"><div class="slideP"><p>10:00</p><p>已结束</p></div></div>
+        <div class="swiper-slide swiper-slide-active"><div class="slideP"><p>12:00</p><p>立即抢购</p></div></div>
+        <div class="swiper-slide"><div class="slideP"><p>14:00</p><p>即将开始</p></div></div>
+		<div class="swiper-slide"><div class="slideP"><p>16:00</p><p>即将开始</p></div></div>
+    </div>
+    <div class="red-center"></div>
+</div>
+<div class="xiaojiantou"></div>
+<article style="margin-top:50px;">
+<div class="swiper-container gallery-top swiper-container-horizontal">
+    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+        <div class="swiper-slide">
+            <div class="dateTime">
+                <p>限时抢 福利大放送</p>
+                <div class="time" id="time01">
+                	<span class="start">距下场开始:</span><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>500</p><p>可口可乐可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p class="color">提醒我</p>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>9.5</p><p>脉动</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p class="color">取消提醒</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="dateTime">
+                <p>限时抢 福利大放送</p>
+                <div class="time" id="time02">
+                	<span class="start">距下场开始:</span><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>500</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p class="color">提醒我</p>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>9.5</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                    <div class="percentBox">
+                    	<div class="percent"><p style="width:100%"></p></div>
+                        <div class="perInfo">100 人抢中</div>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p class="color">取消提醒</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="dateTime">
+                <p>限时抢 福利大放送</p>
+                <div class="time" id="time04">
+                	<span class="start">距本场结束:</span><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>500</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                    <div class="percentBox">
+                    	<div class="percent"><p style="width:40%"></p></div>
+                        <div class="perInfo">23 人抢中</div>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p class="color2">抢劵<br/><span>233 人参与</span></p>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>9.5</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                    <div class="percentBox">
+                    	<div class="percent"><p style="width:40%"></p></div>
+                        <div class="perInfo">23 人抢中</div>
+                    </div>
+                </div>
+                <div class="couRight couRed">
+                	<p class="color3">已领取<a href="#">去领取</a></p>
+                </div>
+            </div>
+            <div class="couponList gray">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>9.5</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                    <div class="percentBox">
+                    	<div class="percent"><p style="width:100%"></p></div>
+                        <div class="perInfo">100 人抢中</div>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p class="color1 font15">下次继续</p>
+                </div>
+            </div>
+            <div class="couponList gray">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>9.5</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                    <div class="percentBox">
+                    	<div class="percent"><p style="width:100%"></p></div>
+                        <div class="perInfo">100 人抢中</div>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p class="color1">已抢光</p>
+                </div>
+            </div>
+            <div class="couponList gray">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>9.5</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                    <div class="percentBox">
+                    	<div class="percent"><p style="width:100%"></p></div>
+                        <div class="perInfo">100 人抢中</div>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p class="color1">已抢光</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+            <div class="dateTime">
+                <p>限时抢 福利大放送</p>
+                <div class="time" id="time03">
+                	<span class="start">距本场开始:</span><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>500</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p>提醒我</p>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>9.5</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p>取消提醒</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="dateTime">
+                <p>限时抢 福利大放送</p>
+                <div class="time" id="time05">
+                	<span class="start">距本场开始:</span><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>500</p><p>可口可乐</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p>提醒我</p>
+                </div>
+            </div>
+            <div class="couponList">
+            	<div class="couLeft">
+                    <div class="first_center">
+                        <table class="first_left"><tr><td><p>9.5</p><p>脉动</p></td></tr></table>
+                        <table class="first_right"><tr><td><strong>现金劵</strong><span>全场不限品牌均可使用［最高优惠50元］</span></td></tr></table>
+                    </div>
+                </div>
+                <div class="couRight">
+                	<p>取消提醒</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</article>
+</div>
+<!--点抢券成功-->
+<div class="popUp" id="popUp" style="display:none">
+	<div class="window">
+    	<div  class="close"><a href="javascript:void(0)"></a></div>
+        <div class="windowBox">
+        	<img src="images/showpic1.png" width="100%" />
+            <div class="popCoupon">
+                <img src="images/showpic2.jpg" width="100%" height="190" />
+                <div class="firstCenter">
+                    <table class="firstLeft"><tr><td><p class="jian">1<span>元</span></p><p>直减直减直减直减</p></td></tr></table>
+                    <table class="firstRight"><tr><td><strong>直减券</strong><span>全场不限品牌1元立减券</span></td></tr></table>
+                </div>
+                <div class="popInfo">恭喜抢到了！</div>
+            </div>
+            <div class="popLink">优惠券已放入账户中，请在<img src="images/showpic4.png" class="popIcon1"/>我的<img src="images/showpic5.png" class="popIcon2"/>页查看</div>
+            <a href="#" class="popBtn">马上使用</a>
+        </div>
+    </div>
+</div>
+<!--点抢券失败-->
+<div class="popUp" id="popUp" style="display:none">
+	<div class="window">
+    	<div  class="close"><a href="javascript:void(0)"></a></div>
+        <div class="windowBox">
+            <div class="popCoupon">
+                <img src="images/showpic6.png" width="100%"/>
+                <div class="popInfo popInfo2">很遗憾没抢到！</div>
+            </div>
+            <div class="popLink">试试手气，明天再来开抢～</div>
+            <a href="#" class="popBtn">朕知道了</a>
+        </div>
+    </div>
+</div>
+<!--活动规则弹出-->
+<div class="popUp" id="popUp" style="display:none">
+	<div class="window window2">
+    	<div  class="close"><a href="javascript:void(0)"></a></div>
+        <div class="windowBox windowBox2">
+            <div class="activeRule">活动规则</div>
+            <div class="ruleInfo">
+            	<p>1.[纯悦秒杀]购可口可乐产品满299元赠2箱纯悦550ml*12</p>
+                <p>2.活动每天08点开抢，每个用户每天可参加一次</p>
+                <p>3.不含冰露轻量瓶水</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script src="js/swiper.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	countDown("2016/10/10 23:19:59",null,"#time01 .hour","#time01 .minute","#time01 .second");
+	countDown("2016/10/10 22:29:59",null,"#time02 .hour","#time02 .minute","#time02 .second");
+	countDown("2016/10/10 21:39:59",null,"#time03 .hour","#time03 .minute","#time03 .second");
+	countDown("2016/10/10 20:49:59",null,"#time04 .hour","#time04 .minute","#time04 .second");
+	countDown("2016/10/10 19:59:59",null,"#time05 .hour","#time05 .minute","#time05 .second");
+	countDown("2016/10/10 23:19:59",null,"#time06 .hour","#time06 .minute","#time06 .second");
+	countDown("2016/10/10 22:29:59",null,"#time07 .hour","#time07 .minute","#time07 .second");
+	countDown("2016/10/10 21:39:59",null,"#time08 .hour","#time08 .minute","#time08 .second");
+	countDown("2016/10/10 20:49:59",null,"#time09 .hour","#time09 .minute","#time09 .second");
+	countDown("2016/10/10 19:59:59",null,"#time10 .hour","#time10 .minute","#time10 .second");
+});
+
+function countDown(time,day_elem,hour_elem,minute_elem,second_elem){
+	//if(typeof end_time == "string")
+	var end_time = new Date(time).getTime(),//月份是实际月份-1
+	//current_time = new Date().getTime(),
+	sys_second = (end_time-new Date().getTime())/1000;
+	var timer = setInterval(function(){
+		if (sys_second > 0) {
+			sys_second -= 1;
+			var day = Math.floor((sys_second / 3600) / 24);
+			var hour = Math.floor((sys_second / 3600) % 24);
+			var minute = Math.floor((sys_second / 60) % 60);
+			var second = Math.floor(sys_second % 60);
+			day_elem && $(day_elem).text(day);//计算天
+			$(hour_elem).text(hour<10?"0"+hour:hour);//计算小时
+			$(minute_elem).text(minute<10?"0"+minute:minute);//计算分
+			$(second_elem).text(second<10?"0"+second:second);// 计算秒
+		} else { 
+			clearInterval(timer);
+		}
+	}, 1000);
+}
+</script>
+<script>
+
+    var galleryTop = new Swiper('.gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		autoResize: 'auto',
+        spaceBetween:0,
+        active:3,
+        initialSlide:2
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween:0,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.5,
+        slideToClickedSlide: true,
+        active:3,
+        initialSlide:2
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
+</script>
+<script language="javascript">
+
+    function display(li){
+        li.className='active';
+        var subdis=li.getElementsByTagName("ul")[0];
+        subdis.style.display="block";
+    }
+    function ndisplay(li){
+        li.className='noactive';
+        var subdis=li.getElementsByTagName("ul")[0];
+        subdis.style.display="None";
+    }
+    var preBtn=document.querySelectorAll('.pre-btn');
+    for (var j=0; j<preBtn.length; j++) {
+        preBtn[j].onclick = function(){
+            this.style.display='none';
+            this.parentNode.querySelector('.pre-load').style.display='none';
+            myframe=this.parentNode.querySelector('iframe');
+            framesrc=myframe.attributes["data-src"].value;
+            myframe.setAttribute("src",framesrc);
+        }
+    }
+
+</script>
+</body>
+</html>

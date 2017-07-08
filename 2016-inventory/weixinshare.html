@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache,no-store" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0"> 
+<title>2016大盘点</title>
+<style>
+html {font-size:10px; -webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body {margin:0;padding:0;font-family:SimHei, Helvetica, sans-serif;font-size:1.4rem;color:#fff; background:#14a6fa;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, th, td {margin:0;padding:0;	border:0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;	font-weight:normal; color:#000;}
+ol, ul {list-style:none;}
+fieldset, img {border:none}
+img{ display:block;}
+a{font-size:1.4rem;color:#0097aa;-webkit-user-select:none;-webkit-touch-callout:none;}
+ins,a,a:hover { text-decoration:none;}
+a:focus, *:focus {outline:none;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;outline:none}
+.wrapper{ width:100%;font-size:1.4rem; position:relative; overflow:hidden}
+
+.page7_pic1 img,.page7_btn img{
+    width: 100%;
+}
+.page7_pic1 p{
+    margin: 4% 0 0;
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.page7_title1{
+    padding:12% 5% 5%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.page7_title1 p:nth-last-child(2){
+    padding:5px 0 0;
+}
+.page7_title1 p span{
+    padding:0 5px;
+    font-size: 3.6rem;
+    color:#ffe558 ;
+}
+.page7_title1 p:nth-child(3) span{
+    padding:0 3px;
+    font-size: 2.3rem;
+    color:#ffe558 ;
+}
+.page7_btn{
+    padding:0 6.1%;
+    margin: 5% auto 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #25adfb;
+}
+.page7_btn a{
+    width: 45.2%;
+    float: left;
+}
+.page7_btn a:nth-child(2){
+    float: right;
+}
+/*微信传播*/
+.share_pic p{
+    margin: 3% 0 0;
+    line-height: 30px;
+    font-size: 2rem;
+}
+.share_pic p span{
+    color:#ffe558;
+}
+.share_title{
+    padding:15% 5% 5%;
+}
+.share_title p:nth-child(1) span,.share_title p:nth-child(2) span{
+    color:#ffe558 ;
+    font-size: 2.2rem;
+}
+.share_btn{
+    margin: 2% auto 0;
+}
+/*弹出窗口*/
+.popUp {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    min-height: 100%;
+    z-index: 999999999999999999999;
+    display: none;
+}
+.window {
+    position: absolute;
+    left: 7.5%;
+    top: 20%;
+    z-index: 2;
+    width: 85%;
+    background: none;
+    overflow: hidden;
+}
+.window_box{
+    width: 100%;
+    background: url(images/pop_pic1.png) no-repeat;
+    background-size: 100% auto;
+    margin-top: 7%;
+}
+.window_bottom{
+    width: 100%;
+    height: 10px;
+    line-height: 10px;
+    background: url(images/pop_pic2.png) no-repeat;
+    background-size: 100% 10px;
+    overflow: hidden;
+}
+.window_form{
+    width:72%;
+    margin:5% auto 0;
+    padding-bottom: 2%;
+    overflow: hidden;
+}
+.tel{
+    height: 39px;
+    border: 1px solid #14a6fa;
+    border-radius: 10px;
+    padding-left:5%;
+    margin-top: 3%;
+}
+.tel input{
+    display: block;
+    width: 80%;
+    line-height: 39px;
+    color: #666;
+    font-family:SimHei, Helvetica, sans-serif;
+    font-size:1.4rem;
+}
+.code{
+    margin-top: 5%;
+    width:100%;
+    height:41px;
+    overflow: hidden;
+}
+.code input:nth-child(1){
+    width: 53%;
+    float: left;
+    padding-left:3%;
+    line-height: 39px;
+    border-radius: 10px;
+    border: 1px solid #14a6fa;
+    color: #666;
+    font-family:SimHei, Helvetica, sans-serif;
+    font-size:1.4rem;
+}
+.code input:nth-child(2){
+    width: 38%;
+    float: right;
+    background: url(images/pop_pic4.png) no-repeat;
+    background-size: 100% 41px;
+    height:41px ;
+    line-height: 41px;
+    color: #fff;
+    font-family:SimHei, Helvetica, sans-serif;
+    font-size:1.4rem;
+}
+.code input.disable{
+    background: url(images/pop_pic7.png) no-repeat;
+    background-size: 100% 41px;
+}
+.pop_btn{
+    margin-top:5%;
+    padding:18% 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.error{
+    position:absolute;
+    top:0;
+    left:0;
+    background: url(images/pop_pic5.png) 0 center no-repeat;
+    background-size: 12px 12px;
+    padding-left:18px;
+    line-height: 20px;
+    color: #ff0a0a;
+}
+.pop_btn a{
+    display: block;
+    width: 100%;
+    height: 51px;
+    line-height: 51px;
+    background: url(images/pop_pic6.png) 0 center no-repeat;
+    background-size: 100% 51px;
+    text-align: center;
+    font-size:1.8rem;
+    color: #ff0a0a;
+}
+.close,.close2{
+    display: block;
+    position: absolute;
+    top:0;
+    right:7%;
+    width:32px;
+    height: 32px;
+    background: url(images/close.png)  no-repeat;
+    background-size: 32px 32px;
+}
+.close2{
+    top:10%;
+    right:19%;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="page7_pic1 share_pic">
+        <!--省钱达人-->
+        <img src="images/page7_pic1.png" />
+        <p>王萌2016在惠下单获得了<br/><span>“省钱达人”</span>的称号</p>
+        <!--不差钱-->
+        <!--
+        <img src="images/page7_pic2.png" />
+        <p>王萌2016在惠下单获得了<br/><span>“不差钱”</span>的称号</p>
+        -->
+        <!--亏大了-->
+        <!--
+        <img src="images/page7_pic3.png" />
+        <p>王萌2016在惠下单获得了<br/><span>“亏大了”</span>的称号</p>
+        -->
+    </div>
+    <div class="page7_title1 share_title">
+        <p>2016年您在惠下单节省了<span>188</span>元</p>
+        <p>击败了全国<span>26%</span>的用户</p>
+    </div>
+    <div class="page7_btn share_btn">
+        <a><img src="images/page7_pic5.png" /></a>
+        <a><img src="images/look_my.png" /></a>
+    </div>
+</div>
+<!--关注惠下单二维码弹出-->
+<div class="popUp" style="display: none;">
+    <a href="javascript:void(0)" class="close2"></a>
+    <img src="images/code.png" width="100%" style="margin-top:30%" />
+</div>
+<!--弹出层-->
+<div class="popUp" style="display: block;">
+    <div class="window">
+        <a href="javascript:void(0)" class="close"></a>
+        <div class="window_box">
+            <img src="images/pop_pic3.png" width="100%" />
+            <div class="window_form">
+                <div class="tel"><input type="tel" placeholder="请输入您的手机号码" /> </div>
+                <div class="code"><input type="tel" placeholder="请输入验证码" /><input type="button" id="code_btn" value="获取" onclick="settime(this)" /></div>
+                <div class="pop_btn">
+                    <p class="error">手机号输入错误</p>
+                    <a href="javascript:void(0)">确认</a>
+                </div>
+            </div>
+        </div>
+        <div class="window_bottom"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".popUp").click(function(){
+            $(this).hide();
+        })
+    });
+</script>
+<script>
+    var countdown=60;
+    function settime(obj) {
+        if (countdown == 0) {
+            $("#code_btn").removeClass("disable");
+            obj.removeAttribute("disabled");
+            obj.value="获取";
+            countdown = 60;
+            return;
+        } else {
+            $("#code_btn").addClass("disable");
+            obj.setAttribute("disabled", true);
+            obj.value="" + countdown + "秒";
+            countdown--;
+        }
+        setTimeout(function() {
+                    settime(obj) }
+                ,1000)
+    }
+</script>
+</body>
+</html>

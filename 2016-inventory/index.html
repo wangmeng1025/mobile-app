@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>2016大盘点</title>
+<meta name="apple-touch-fullscreen" content="YES">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style>
+	.m-spinner{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background: #fff;
+	}
+	.load-inner{
+		display:inline-block;
+		position:absolute;
+		z-index:1000;
+		top:30%;
+		left:50%;
+		margin-left:-50px;
+		text-align:center;
+		width:100px;
+	}
+	.car{
+		width: 77px;
+		height:38px;
+		float: left;
+		-webkit-animation: caranimate 2s linear alternate infinite;
+		animation: caranimate 2s linear alternate infinite;
+	}
+	.tree{
+		width: 17px;
+		height:29px;
+		float: left;
+		position: relative;
+		top:-5px;
+		-webkit-animation:treeanimate 1.5s linear infinite;
+		animation:treeanimate 1.5s linear infinite;
+		position: relative;
+		z-index: -1;
+	}
+	.m-spinner p{
+		color:#222;
+		font-size:2.0rem;
+		position: relative;
+		top:8px
+	}
+	@-webkit-keyframes treeanimate{
+		0%{opacity:1;
+			-webkit-transform:translateX(0);
+			transform:translateX(0)
+		}
+		100%{opacity:1;
+			-webkit-transform:translateX(-77px);
+			transform:translateX(-77px)
+		}
+
+	}
+	@keyframes treeanimate{
+
+		0%{opacity:1;
+			-webkit-transform:translateX(0);
+			transform:translateX(0)
+		}
+		100%{opacity:1;
+			-webkit-transform:translateX(-77px);
+			transform:translateX(-77px)
+		}
+
+	}
+	@-webkit-keyframes caranimate{
+		0%{
+			-webkit-transform:translate3d(0,0,0);
+			transform:translate3d(0,0,0);
+		}
+		100%{
+			-webkit-transform:translate3d(0,-8px,0);
+			transform:translate3d(0,-8px,0)
+		}
+	}
+	@keyframes caranimate{
+		0%{
+			-webkit-transform:translate3d(0,0,0);
+			transform:translate3d(0,0,0);
+		}
+		100%{
+			-webkit-transform:translate3d(0,-8px,0);
+			transform:translate3d(0,-8px,0)
+		}
+	}
+</style>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body  id="bodys">
+<audio id="beep-one" loop></audio>
+<div class="hide index">
+	<div class="index1"><img src="images/index1.png" /></div>
+	<div class="index2">
+		<img src="images/index4.png" />
+	</div>
+	<a href="javascript:void(0)" class="btn"><img src="images/btn1.png" /></a>
+	<div class="index3"><img src="images/cloud1.png" /></div>
+	<div class="index4"><img src="images/cloud2.png" /></div>
+	<div class="index5"><img src="images/cloud3.png" /></div>
+	<div class="index6"><img src="images/balloon1.png" /></div>
+	<div class="index7"><img src="images/balloon2.png" /></div>
+</div>
+<!--微信端分享提示弹出-->
+<div class="popUp" id="popUp1" style="display: none;">
+	<img src="images/share.png" />
+</div>
+<div class="popUp" style="display: none;" id="fllow">
+	<a href="javascript:void(0)" class="close2"></a>
+	<img src="images/code.png" style="margin-top:30%" />
+</div>
+<section id="main" class="hide show-dom-ready">
+	<div id="carousel" class="swiper-container">
+		<div class="swiper-wrapper vertical-swiper">
+			<!--page1，第一页-->
+			<div class="swiper-slide">
+				<div class="inner lazyload" data-bg="images/bg1.jpg">
+					<div class="page1_bg"><img src="images/page1_pic1.png" /></div>
+					<div class="circel"></div>
+					<div class="finger"><img src="images/page1_pic2.png" /></div>
+					<div class="title1">我注册惠下单APP的时间</div>
+					<div class="numberbox clearfix" id="numberboxs1"></div>
+					<div class="title1 title2">第一张订单的时间</div>
+					<div class="numberbox clearfix" id="numberboxs2"></div>
+					<div class="title3"><img src="images/page1_pic4.png" /></div>
+					<div class="cloud4"><img src="images/cloud4.png" /></div>
+					<div class="cloud5"><img src="images/cloud5.png" /></div>
+					<div class="cloud6"><img src="images/cloud6.png" /></div>
+					<div class="cloud7"><img src="images/cloud7.png" /></div>
+				</div>
+			</div>
+			<!--page2，第二页-->
+			<div class="swiper-slide">
+				<div class="inner lazyload" data-bg="images/bg2.jpg">
+					<div class="page2_bg"><img src="images/page2_pic1.png" /></div>
+					<div class="page2_shop"><img src="images/page2_pic3.png" /></div>
+					<div class="page2_car"><img src="images/page2_pic2.png" /></div>
+					<div class="page2_title1 page2_title0">
+						<p>我的第一家经销商</p>
+						<p>鼎盛批发</p>
+					</div>
+					<div class="page2_cargo1"><img src="images/page2_pic4.png" /></div>
+					<div class="page2_cargo2"><img src="images/page2_pic5.png" /></div>
+					<div class="page2_title1 page2_title2">
+						<p>我的第一个品牌</p>
+						<p>可口可乐</p>
+					</div>
+					<div class="page2_people"><img src="images/page2_pic6.png" /></div>
+					<div class="page2_title1 page2_title3">
+						<p>为我装机的业代<!--通过扫码加入--><!--通过自助注册--></p>
+						<p>彭真</p>
+					</div>
+					<div class="cloud8"><img src="images/page2_cloud1.png" /></div>
+					<div class="cloud9"><img src="images/page2_cloud2.png" /></div>
+					<div class="cloud10"><img src="images/page2_cloud3.png" /></div>
+					<div class="page2_balloon1"><img src="images/page2_balloon1.png" /></div>
+				</div>
+			</div>
+			<!--page3，第三页-->
+			<div class="swiper-slide">
+				<div class="inner lazyload" data-bg="images/bg3.jpg">
+					<div class="page3_bg"><img src="images/page3_pic1.png"/></div>
+					<div class="page3_pic1"><img src="images/page3_pic3.png"/></div>
+					<div class="page3_pic2"><img src="images/page3_pic4.png"/></div>
+					<div class="page3_pic3"><img src="images/page3_pic5.png"/></div>
+					<div class="page3_people"><img src="images/page3_pic2.png"/></div>
+					<div class="page3_title1 page3_title0"><p>2016年</p><p>我的订单总张数：</p><p><span class="timer1" id="count-number1" data-to="25896" data-speed="1500">0</span>张</p></div>
+					<div class="page3_ipad"><img src="images/page3_pic6.png"/></div>
+					<div class="page3_pic4"><img src="images/page3_pic7.png"/></div>
+					<div class="page3_title1 page3_title2"><p>2016年</p><p>我的下单品牌数：</p><p><span class="timer2" id="count-number2" data-to="521" data-speed="1500">0</span>个</p></div>
+					<div class="page3_pic5"><img src="images/page3_pic8.png"/></div>
+					<div class="page3_pic6"><img src="images/page3_pic9.png"/></div>
+					<div class="page3_pic7"><img src="images/page3_pic10.png"/></div>
+					<div class="page3_title1 page3_title3"><p>2016年</p><p>我的下单商品数：</p><p><span class="timer3" id="count-number3" data-to="91374" data-speed="1500">0</span>个</p></div>
+					<div class="cloud11"><img src="images/page3_cloud1.png" /></div>
+					<div class="cloud12"><img src="images/page3_cloud2.png" /></div>
+				</div>
+			</div>
+			<!--page4，第四页-->
+			<div class="swiper-slide">
+				<div class="inner lazyload" data-bg="images/bg4.jpg">
+					<div class="page4_bg"><img src="images/page4_pic1.png" /></div>
+					<div class="page4_pic1"><img src="images/page4_pic2.png" /></div>
+					<div class="page4_pic2"><img src="images/page4_pic3.png" /></div>
+					<div class="page5_title1 page4_title1"><p>2016年</p><p>我共获得<span class="timer4" id="count-number4" data-to="8521" data-speed="1500">0</span>惠米</p><p>我共获得<span class="timer5" id="count-number5" data-to="858" data-speed="1500">0</span>惠币</p></div>
+					<div class="page4_pic3"><img src="images/page4_pic4.png" /></div>
+					<div class="page5_title1 page4_title2"><p>2016年</p><p>我共兑换<span class="timer6" id="count-number6" data-to="58" data-speed="1500">0</span>次奖品</p></div>
+					<div class="cloud13"><img src="images/page4_cloud1.png" /></div>
+					<div class="cloud14"><img src="images/page4_cloud2.png" /></div>
+					<div class="cloud15"><img src="images/page4_cloud3.png" /></div>
+					<div class="page4_balloon1"><img src="images/page4_balloon1.png" /></div>
+					<div class="page4_balloon2"><img src="images/page4_balloon2.png" /></div>
+					<div class="page4_balloon3"><img src="images/page4_balloon3.png" /></div>
+					<div class="page4_balloon4"><img src="images/page4_balloon4.png" /></div>
+				</div>
+			</div>
+			<!--page5，第五页-->
+			<div class="swiper-slide">
+				<div class="inner lazyload" data-bg="images/bg5.jpg">
+					<div class="page5_bg"><img src="images/page5_pic1.png" /></div>
+					<div class="lottery">
+						<img src="images/page5_pic2.png" />
+						<img src="images/page5_pic3.png" />
+						<img src="images/page5_pic4.png" />
+					</div>
+					<div class="page5_title1 page5_title0"><p>2016年</p><p>我共参加过<span class="timer7" id="count-number7" data-to="8" data-speed="1500">0</span>次有奖活动</p></div>
+					<div class="coupon">
+
+						<img src="images/page5_pic6.png" />
+						<img src="images/page5_pic7.png" />
+						<img src="images/page5_pic5.png" />
+					</div>
+					<div class="page5_title1 page5_title2"><p>2016年</p><p>我共使用<span class="timer8" id="count-number8" data-to="188" data-speed="1500">0</span>张优惠券</p><p>错过了<span class="timer9" id="count-number9" data-to="18" data-speed="1500">0</span>张优惠券</p></div>
+					<div class="cloud16"><img src="images/page5_cloud1.png" /></div>
+					<div class="cloud17"><img src="images/page5_cloud2.png" /></div>
+					<div class="cloud18"><img src="images/page5_cloud3.png" /></div>
+					<div class="page5_balloon1"><img src="images/page2_balloon1.png" /></div>
+				</div>
+			</div>
+			<!--page6，第六页-->
+			<div class="swiper-slide">
+				<div class="inner lazyload" data-bg="images/bg6.jpg">
+					<div class="page6_bg"><img src="images/page6_pic1.png"/></div>
+					<div class="page5_title1 page6_title1"><p>2016年</p><p><span class="timer10" id="count-number10" data-to="188" data-speed="1500">0</span>个业务员为我服务</p></div>
+					<div class="page6_shop">
+						<img src="images/page6_pic2.png"/>
+						<img src="images/page6_pic3.png"/>
+						<img src="images/page6_pic4.png"/>
+					</div>
+					<div class="page5_title1 page6_title2"><p>2016年</p><p>业务员为我服务<span class="timer11" id="count-number11" data-to="288" data-speed="1500">0</span>次</p></div>
+					<div class="page6_ipad">
+						<img src="images/page6_pic5.png" class="page_hui"/>
+						<div class="page6_tel">
+							<img src="images/page6_pic6.png"/>
+							<img src="images/page6_pic7.png"/>
+						</div>
+					</div>
+					<div class="cloud19"><img src="images/page6_cloud1.png" /></div>
+					<div class="cloud20"><img src="images/page6_cloud2.png" /></div>
+					<div class="page6_balloon1"><img src="images/page6_balloon1.png" /></div>
+				</div>
+			</div>
+			<!--第七页-->
+			<div class="swiper-slide">
+				<div class="inner lazyload" data-bg="images/bg6.jpg">
+					<div class="page7_pic1">
+						<!--省钱达人-->
+						<img src="images/page7_pic1.png" />
+						<p>您太会做生意了，明年再接再厉！</p>
+						<!--不差钱-->
+						<!--
+                        <img src="images/page7_pic2.png" />
+                        <p>知道您不差钱，但省钱还是有必要的！</p>
+                        -->
+						<!--亏大了-->
+						<!--
+                        <img src="images/page7_pic3.png" />
+                        <p>今年错过了好多优惠券，快加入惠下单享优惠吧！</p>
+                        -->
+					</div>
+					<div class="page7_title1">
+						<p>2016年您在惠下单节省了</p>
+						<p><span>1888</span>元</p>
+						<p>击败了全国<span>88%</span>的用户</p>
+					</div>
+					<div class="page7_btn">
+						<a href="javascript:void(0)"><img src="images/page7_pic5.png"  onclick="popUp1()"/></a>
+						<a href="javascript:void(0)"><img src="images/page7_pic4.png" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--加载中-->
+<div id="spinner" class="m-spinner">
+	<div class="load-inner">
+		<img src="images/car.png" class="car" />
+		<img src="images/tree.png" class="tree" />
+		<p><span id="loading-progress">0%</span></p>
+	</div>
+</div>
+
+
+<div class="guide-arrow hide show-app-ready"></div>
+<div class="sound_have hide" onclick="music1()"><img src="images/song.png" /></div>
+<div class="sound_none hide" onclick="music2()"><img src="images/song.png" /></div>
+
+<!--<script type="text/javascript" src="js/main.js"></script>-->
+<script src="js/zepto.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/index.js"></script>
+<script>
+
+    window.onload = function() {
+      App.init();
+	  //$("#beep-one").attr("src","images/song.mp3");
+    };
+	window.onunload = function() {
+		document.getElementById("beep-one").stop();
+	};
+</script>
+<script src="js/datetime.js"></script>
+<script>
+	$(document).bind('ready', function(){
+
+		//alert(window.screen.width);
+		//alert(window.screen.height);
+	});
+	localStorage.setItem("key",1);
+	function music(){
+		var flag = localStorage.getItem("key");
+		var music = document.getElementById("beep-one");
+		if (flag == 1) {
+			$("#beep-one").attr("src", "images/song.mp3");
+			music.play()
+		} else {
+			$("#beep-one").attr("src", "images/song.mp3");
+			music.pause()
+		}
+		setTimeout(function () {
+			$(".sound_none").removeClass("hide");
+			$(".sound_have").addClass("hide");
+			document.getElementById('beep-one').pause();
+		}, 20000);
+	}
+	function popUp1(){
+		$("#fllow").css("display","block");
+	}
+	function music1(){
+		$(".sound_none").removeClass("hide");
+		$(".sound_have").addClass("hide");
+		var audio = document.getElementById('beep-one');
+		audio.pause();
+	}
+	function music2(){
+		$(".sound_have").removeClass("hide");
+		$(".sound_none").addClass("hide");
+		var audio = document.getElementById('beep-one')
+		audio.play();
+		setTimeout(function () {
+			$(".sound_none").removeClass("hide");
+			$(".sound_have").addClass("hide");
+			document.getElementById('beep-one').pause();
+		}, 20000);
+	}
+	function numScroll() {
+		numScrollforRegister();
+		numScrollforOrder();
+	}
+
+	function numScrollRemove() {
+		numPageRemove();
+	}
+	var timeId1;
+	var timeId2;
+	var timeId3;
+	var timeId4;
+	var timeId5;
+	var timeId6;
+	var timeId7;
+	var timeId8;
+	var timeId9;
+	var timeId10;
+	var timeId11;
+	function clearTime(){
+		$("#count-number1").html("0");
+		$("#count-number2").html("0");
+		$("#count-number3").html("0");
+		$("#count-number4").html("0");
+		$("#count-number5").html("0");
+		$("#count-number6").html("0");
+		$("#count-number7").html("0");
+		$("#count-number8").html("0");
+		$("#count-number9").html("0");
+		$("#count-number10").html("0");
+		$("#count-number11").html("0");
+		clearTimeout(timeId1);
+		clearTimeout(timeId2);
+		clearTimeout(timeId3);
+		clearTimeout(timeId4);
+		clearTimeout(timeId5);
+		clearTimeout(timeId6);
+		clearTimeout(timeId7);
+		clearTimeout(timeId8);
+		clearTimeout(timeId9);
+		clearTimeout(timeId10);
+		clearTimeout(timeId11);
+	}
+	function numAll() {
+
+		timeId1 = setTimeout(function () {
+			$(".timer1").each(count,0);
+		}, 1500);
+		timeId2 = setTimeout(function () {
+			$(".timer2").each(count,0);
+		}, 3000);
+		timeId3 = setTimeout(function () {
+			$(".timer3").each(count,0);
+		}, 4500);
+		timeId4 = setTimeout(function () {
+			$(".timer4").each(count,0);
+		}, 2000);
+		timeId5 = setTimeout(function () {
+			$(".timer5").each(count,0);
+		}, 2000);
+		timeId6 = setTimeout(function () {
+			$(".timer6").each(count,0);
+		}, 3200);
+		timeId7 = setTimeout(function () {
+			$(".timer7").each(count,0);
+		}, 1000);
+		timeId8 = setTimeout(function () {
+			$(".timer8").each(count,0);
+		}, 2400);
+		timeId9 = setTimeout(function () {
+			$(".timer9").each(count,0);
+		}, 2400);
+		timeId10 = setTimeout(function () {
+			$(".timer10").each(count,0);
+		}, 2000);
+		timeId11 = setTimeout(function () {
+			$(".timer11").each(count,0);
+		}, 2600);
+	}
+	var numId1;
+	var numId2;
+	function numScrollforRegister() {
+		clearTimeout(numId1);
+		numId1 = setTimeout(function () {
+			new numberScroll("20161126", 1, 20, "numberboxs1");
+		}, 1900);
+	}
+	function numScrollforOrder() {
+		clearTimeout(numId2);
+		numId2 = setTimeout(function () {
+			new numberScroll("20161129", 1, 20, "numberboxs2");
+		}, 4500);
+	}
+
+	function numPageRemove() {
+		$(".numberlist").remove();
+	}
+
+</script>
+</body>
+
+</html>

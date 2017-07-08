@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache,no-store" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>账单详情</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="wrapper">
+	<ul class="billInfo">
+    	<li><p>订单编号</p><p>2016UYEIWOEKWJEKWJEKWJ</p></li>
+        <!--订单检测状态:正常-->
+        <!--<li><p>订单检测状态</p><p>正常</p></li>-->
+        <!--订单检测状态:异常-->
+        <li class="abnormal"><p>订单检测状态</p><p>&nbsp;</p><p>异常</p></li>
+        <li><p>支付方式</p><p>银联支付</p></li>
+        <li><p>支付时间</p><p>2016-05-25 15:26:36</p></li>                   
+    </ul>
+    <ul class="billInfo billInfo2">
+    	<li><p>门店实付款</p><p><span>￥</span>2000.00</p></li>
+        <li><p>优惠券费用</p><p><span>￥</span>200.00</p></li>
+        <li><p>手续费</p><p>-<span>￥</span>20.00</p></li>
+        <li><p>应核款</p><p class="count"><span>￥</span>2800.00</p></li>                   
+    </ul>
+    <div class="billList">
+    	<div class="billTitle"><p>爱家超市</p></div>
+        <ul class="billPic">
+            <li><img src="images/pic1.jpg" /></li>
+            <li><img src="images/pic1.jpg" /></li>
+            <li><img src="images/icon8.png" /></li>
+            <a href="#">
+            <li><span>3</span>种商品<br/>共<span>26</span>件</li>
+            </a>
+        </ul>
+        <div class="listBottom"><p>全场订货9.5折 最高优惠50元</p></div>
+    </div>
+    <div class="billList">
+    	<div class="billTitle"><p>小李超市</p></div>
+        <ul class="billPic">
+            <li><img src="images/pic1.jpg" /></li>
+            <li><img src="images/pic1.jpg" /></li>
+            <a href="#">
+            <li><span>2</span>种商品<br/>共<span>16</span>件</li>
+            </a>
+        </ul>
+    </div>
+</div>
+<!--弹出层-->
+<div class="popUp">
+	<div class="window">
+    	<a href="javascript:void(0)" class="close"></a>
+        <div class="popBox">
+            <ul class="popInfo">
+            	<li>惠下单依托于大数据平台对异常订单进行监控，针对异常登录、异常下单、异常刷卡等异常情况智能提醒。</li>
+                <li>针对异常订单数量过多的经销商，惠下单将进行实地核查。</li>
+            </ul>
+            <a href="javascript:void(0)" class="popBtn">我知道了</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+<script>
+	$(document).ready(function(e) {
+        $(".billInfo li.abnormal p:nth-child(2)").click(function(){
+			$(".popUp").show();
+		});
+		$(".close,.popBtn").click(function(){
+			$(".popUp").hide();
+		});
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache,no-store" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0"> 
+<title>中奖纪录</title>
+<style>
+html {font-size:10px; -webkit-text-size-adjust:none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+body {margin:0;padding:0;font-family:SimHei, Helvetica, sans-serif;font-size:1.4rem;color:#999; background:#f3f5f7;}	
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, th, td {margin:0;padding:0;	border:0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;	font-weight:normal; color:#000;}
+ol, ul {list-style:none;}
+fieldset, img {border:none}
+img{ display:block;}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;outline:none}
+a{font-size:1.4rem;color:#0097aa;-webkit-user-select: none;-webkit-touch-callout: none;}
+ins,a,a:hover { text-decoration:none;}
+a:focus, *:focus {outline:none;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+.wrapper{ width:100%;font-size:1.4rem;}
+
+.dateTime{ margin:3.2% 4.27% 2.13%; line-height:14px;font-size:1.2rem; color:#666; overflow:hidden}
+.first_box{ margin:0 4.27% 3.2%; overflow:hidden}
+.first_con{background:#fff url(images/coupon_bg.jpg) no-repeat; background-size:100% 134px; padding-bottom:5px; position:relative; overflow:hidden}
+.gray .first_con{background:#fff url(images/coupon_bg2.jpg) no-repeat; background-size:100% 134px;}
+.first_top{ line-height:18px; padding:5px 2% 0;font-size:1.1rem;overflow:hidden}
+.first_center{padding:0; padding-bottom:15px; overflow:hidden}
+.hui .first_center{margin-top:-5px; padding-bottom:15px;}
+.first_left{width:35%; float:left; text-align:center; color:#25adfb;min-height:60px;overflow:hidden}
+.first_left p{font-size:3.0rem;}
+.first_left p:nth-child(2){font-size:1.4rem; line-height:20px; height:20px; margin:0; overflow:hidden}
+.first_left p span{font-size:2.4rem;}
+.first_right{width:60%; margin-right:3%; float:right; min-height:60px;}
+.first_right strong{ display:block;line-height:18px; max-height:18px;color:#222; font-weight:normal; overflow:hidden}
+.first_right p{line-height:16px;color:#25adfb; font-size:1.0rem;overflow:hidden}
+.first_right span{display:block;line-height:16px; color:#666;font-size:1.2rem; overflow:hidden}
+.first_left p{ margin:0}
+.first_right strong.money{text-align:left; font-size:1.4rem; max-height:24px; line-height:24px;}
+.first_right p{ text-align:left}
+.first_left p.zhe{font-size:3.0rem;}
+.first_left p.zhe span{font-size:1.2rem;position:relative; display:inline-block; min-width:26px; text-align:left}
+.first_left p.zhe span strong{ position:absolute; left:0; top:-18px; font-size:1.0rem;}
+.first_left p.jian{font-size:3.0rem;}
+.first_left p.jian span{font-size:1.2rem;position:relative; display:inline-block; min-width:26px; text-align:left}
+.first_left p.jian span strong{ position:absolute; left:0; top:-15px; font-size:1.0rem;}
+.now_use{ float:right;height:28px; overflow:hidden}
+.now_use a{ display:block;line-height:28px;padding:0 10px;background:#25adfb;color:#fff; border-radius:3px; text-align:center; overflow:hidden}
+.second_bot{ width:100%; height:14px; line-height:14px; background:url(images/first4.png) no-repeat; background-size:100% 14px; overflow:hidden}
+.first_info{ font-size:1.1rem; line-height:16px; padding:0 2%;}
+.info_left{ width:70%; float:left; line-height:16px; overflow:hidden}
+.ListTitle{ background:url(images/icon3.png) 55px 2px no-repeat; background-size:12px 12px; cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.menuList{ display:none; position:relative; z-index:10}
+.active{background:url(images/icon2.png) 55px 2px no-repeat; background-size:12px 12px;}
+.first_bottom{ width:100%; height:4px; background:url(images/coupon_bot.png) no-repeat; background-size:100% 4px;}
+.gray .first_left,.gray .first_right p{ color:#666}
+.gray .ListTitle,.third .ListTitle{background:url(images/icon5.png) 55px 2px no-repeat; background-size:12px 12px;}
+.gray .active,.third .active{background:url(images/icon4.png) 55px 2px no-repeat; background-size:12px 12px;}
+.nocoupon{ position:absolute; top:50%; left:50%; width:100%;line-height:20px; margin:-10px 0 0 -50%; text-align:center; color:#999; overflow:hidden}
+</style>
+</head>
+<body>
+<div class="nocoupon" style="display:none">没有券？！那就每天试试，总会中奖的~</div>
+<div class="wrapper">
+	<div class="dateTime">2016-10-08</div>
+    <div class="coupon_box first">
+    	<div class="first_box">
+        	<div class="first_con">
+              <div class="first_top">共5张</div>
+              <div class="first_center">
+                 <table class="first_left"><tr><td><p class="zhe">9.5<span>折<strong>最低</strong></span></p><p>格瑞兄弟糖果</p></td></tr></table>
+                 <div class="first_right">
+                    <strong>现金劵</strong>
+                    <span>全场不限品牌均可使用［最高优惠50元］</span>
+                 </div>
+              </div>
+              <div class="first_info">
+              	    <div class="info_left">
+                    	<p>有效期至：2015.03.31</p>
+                        <div class="ListTitle">
+                            查看详情
+                        </div>
+                        <div class="menuList">
+                            全场订货9.5折，最高优惠50元<br/>此优惠劵不与其他优惠劵叠加使用
+                        </div>
+                    </div>
+                    <div class="now_use"><a href="#">立即使用</a></div>
+              </div>
+            </div>
+            <div class="first_bottom"></div>
+        </div>
+        <div class="first_box gray">
+        	<div class="first_con hui">
+              <div class="first_top">共5张</div>
+              <div class="first_center">
+                 <table class="first_left"><tr><td><p class="jian">500<span><strong>最高</strong>元</span></p><p>可口可乐</p></td></tr></table>
+                 <div class="first_right">
+                    <strong>现金劵</strong>
+                    <p>惠下单支付专享</p>
+                    <span>全场不限品牌均可使用［最高优惠50元］</span>
+                 </div>
+              </div>
+              <div class="first_info">
+              	    <div class="info_left">
+                    	<p>有效期至：2015.03.31</p>
+                        <div class="ListTitle">
+                            查看详情
+                        </div>
+                        <div class="menuList">
+                            全场订货9.5折，最高优惠50元<br/>此优惠劵不与其他优惠劵叠加使用
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <div class="first_bottom"></div>
+        </div>
+    </div>
+    <div class="dateTime">2016-09-02</div>
+    <div class="coupon_box first">
+        <div class="first_box gray">
+        	<div class="first_con hui">
+              <div class="first_top">共5张</div>
+              <div class="first_center">
+                 <table class="first_left"><tr><td><p class="jian">500<span><strong>最高</strong>元</span></p><p>可口可乐</p></td></tr></table>
+                 <div class="first_right">
+                    <strong>现金劵</strong>
+                    <p>惠下单支付专享</p>
+                    <span>全场不限品牌均可使用［最高优惠50元］</span>
+                 </div>
+              </div>
+              <div class="first_info">
+              	    <div class="info_left">
+                    	<p>有效期至：2015.03.31</p>
+                        <div class="ListTitle">
+                            查看详情
+                        </div>
+                        <div class="menuList">
+                            全场订货9.5折，最高优惠50元<br/>此优惠劵不与其他优惠劵叠加使用
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <div class="first_bottom"></div>
+        </div>
+        <div class="first_box gray">
+        	<div class="first_con hui">
+              <div class="first_top">共5张</div>
+              <div class="first_center">
+                 <table class="first_left"><tr><td><p class="jian">500<span><strong>最高</strong>元</span></p><p>可口可乐</p></td></tr></table>
+                 <div class="first_right">
+                    <strong>现金劵</strong>
+                    <p>惠下单支付专享</p>
+                    <span>全场不限品牌均可使用［最高优惠50元］</span>
+                 </div>
+              </div>
+              <div class="first_info">
+              	    <div class="info_left">
+                    	<p>有效期至：2015.03.31</p>
+                        <div class="ListTitle">
+                            查看详情
+                        </div>
+                        <div class="menuList">
+                            全场订货9.5折，最高优惠50元<br/>此优惠劵不与其他优惠劵叠加使用
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <div class="first_bottom"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+	$(".first .first_con").each(function(index, element) {
+        var heightd2=$(this).find(".first_center").height();
+		$(this).find(".first_center").find(".first_left").css("height",heightd2);
+    });
+	//查看详情
+	var menuParent = $('.ListTitle');
+	var menuList = $('.menuList');
+	$('.coupon_box > .first_box > .first_con > .first_info > .info_left > .ListTitle').each(function(i) {//获取列表的大标题并遍历
+		$(this).click(function(){
+			if($(menuList[i]).css('display') == 'none'){
+				$(menuList[i]).slideDown(1);
+				$(this).toggleClass("active");
+			}
+			else{
+				$(menuList[i]).slideUp(1);
+				$(this).toggleClass("active");
+			}
+		});
+	});
+});
+</script>
+</body>
+</html>

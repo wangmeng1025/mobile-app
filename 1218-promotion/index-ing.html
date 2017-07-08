@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="Cache-Control" content="no-cache,no-store" />
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0"> 
+<title>1218大促</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div class="wrapper">
+	<img src="images/pic1.jpg" width="100%" />
+    <div class="promotions">
+    	<img src="images/pic2.png" class="proTop" />
+        <div class="proCenter">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="proList">
+            	<tr>
+                	<td><img src="images/pic6.jpg" /></td>
+                    <td>可口可乐500ml*24瓶/箱</td>
+                    <td>×5箱</td>
+                </tr>
+                <tr>
+                	<td><img src="images/pic7.jpg" /></td>
+                    <td>康师傅冰红茶500+50ml*15/箱康师傅冰红茶500+50ml*15/箱康师傅冰红茶500+50ml*15/箱</td>
+                    <td>×5箱</td>
+                </tr>
+                <tr>
+                	<td><img src="images/pic8.jpg" /></td>
+                    <td>炫迈薄荷味6片无糖口香糖*20包炫迈薄荷味6片无糖口香糖*20包</td>
+                    <td>×5包</td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="probottom">原进货价：<span>388元</span></div>
+    </div>
+    <div class="promotions gift decrease">
+    	<img src="images/pic16.png" class="proTop" />
+        <div class="proCenter">
+        	<ul class="proList">
+            	<li>
+                	<p><img src="images/pic6.jpg" /></p>
+                    <p>可口可乐立减20元</p>
+                </li>
+                <li>
+                	<p><img src="images/pic7.jpg" /></p>
+                    <p>康师傅冰红茶立减30元</p>
+                </li>
+                <li>
+                	<p><img src="images/pic8.jpg" /></p>
+                    <p>炫迈薄荷味6片无糖口香糖立减20元</p>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="probottom">立减优惠：<span>70元</span></div>
+    </div>
+    <div class="promotions gift">
+    	<img src="images/pic19.png" class="proTop" />
+        <div class="proCenter">
+        	<ul class="proList">
+            	<li>
+                	<p><img src="images/pic6.jpg" /></p>
+                    <p>可口可乐500ml*24瓶/箱</p>
+                    <p>×5箱</p>
+                </li>
+                <li>
+                	<p><img src="images/pic7.jpg" /></p>
+                    <p>康师傅冰红茶500+50ml*15/箱</p>
+                    <p>×5箱</p>
+                </li>
+                <li>
+                	<p><img src="images/pic8.jpg" /></p>
+                    <p>炫迈薄荷味6片无糖口香糖*20包</p>
+                    <p>×5包</p>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="probottom">零售价值：<span>70元</span></div>
+    </div>
+    <div class="promotions subtract">
+    	<img src="images/pic20.png" class="proTop" />
+        <div class="proCenter">
+        	<p class="dateTime">12.18-12.20每店仅限抢购一次,</p>
+            <div class="precent"><p>下单后再优惠：</p><p>3<span>%</span></p></div>
+        </div>
+        <img src="images/pic22.png" class="proTop" />
+    </div>
+    <div class="promotions">
+    	<div class="allBox">
+        	<div class="allPrice">
+            	<div class="count">99.64<span>元</span></div>
+                <div class="countPrice">
+                	<p>最终付款金额：</p>
+                    <p><span>￥</span><a href="javascript:void(0)">376.36</a><strong>元</strong></p>
+                </div>
+            </div>
+        </div>
+    	<img src="images/pic24.png" class="proTop" />
+    </div>
+    <div class="inviteCode">
+    	<p>邀请码</p>
+        <p><input type="tel" value="" placeholder="请输入业代邀请码" /></p>
+    </div>
+    <div class="buyBtn"><a href="javascript:void(0)">立即购买<img src="images/pic30.png" /></a></div>
+</div>	
+<!--选择收货地址弹出-->
+<div class="popUp" id="popUp">
+	<div class="window">
+    	<div  class="close"><a href="javascript:void(0)"></a></div>
+        <div class="windowBox">
+            <div class="popTit">每店仅限一次抢购机会<br/>请准确选择您要抢购大礼包套数</div>
+            <ul class="radio">
+                <li class="radio_on">1 套</li>
+                <li>2 套</li>
+                <li>3 套</li>
+                <li>4 套</li>
+            </ul>
+            <a href="javascript:void(0)" class="popBtn">确定</a>
+        </div>
+    </div>
+</div>
+<!--业代邀请码输入错误弹出-->
+<div class="inviteError"><p>请输入正确的业代邀请码</p></div>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script>
+$(document).ready(function() {
+	
+    $('.radio li').each(function(i,that){
+		$(that).unbind('click').click(function(){
+			$(that).addClass('radio_on').siblings().removeClass('radio_on');
+		});
+	});
+});
+</script>
+</body>
+</html>
